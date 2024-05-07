@@ -1,0 +1,28 @@
+.dateRangeSelect {
+    font-family: Arial, sans-serif;
+  }
+  
+  .dateRangeSelect label {
+    margin-right: 8px;
+  }
+  
+  .dateRangeSelect select,
+  .dateRangeSelect input[type="date"] {
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .dateRangeSelect select {
+    width: 150px;
+  }
+  
+  .dateRangeSelect input[type="date"] {
+    width: 150px;
+  }
+  
+  .dateRangeSelect div {
+    margin-top: 8px;
+  }
+  

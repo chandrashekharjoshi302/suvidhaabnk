@@ -1,0 +1,140 @@
+.fund {
+  display: flex;
+
+  .fundContainer {
+    flex: 6;
+
+    .papa {
+      display: flex;
+
+      .firstPart {
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 10px;
+        margin: 20px;
+        flex: 6;
+        .text-center {
+            text-align: center;
+          }
+
+        .FundDiv {
+          padding: 5%;
+     
+          .gap {
+            margin: 15px;
+
+    
+            input,
+            select {
+              width: 300px;
+              height: 30px;
+              margin-left: 20px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+            button {
+              margin-top: 10px;
+            }
+            label {
+              margin: 10px;
+              display: block;
+            }
+          }
+          .btnS {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .secondPart {
+        flex: 6;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 10px;
+        margin: 20px;
+
+        .text-center {
+          text-align: center;
+        }
+        .btnS {
+          width: 150px;
+          padding: 10px;
+          border: none;
+          background-color: teal;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+        input,
+        select {
+          width: 300px;
+          height: 30px;
+          margin-left: 20px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+        button {
+          margin-top: 20px;
+          margin-left: 10px;
+        }
+        label {
+          margin: 10px;
+          display: block;
+        }
+      }
+
+
+
+    }
+
+    .papa2{
+        display: flex;
+        gap: 10px;
+        min-height: 200px;
+        margin-bottom: 20px;
+        
+
+        .Bank1{
+            flex: 6;
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            text-align: center;
+            li{
+                list-style: none;
+                margin: 5px;
+            }
+         
+            .font{
+                font-size: 20px;
+                font-weight: 900;
+                margin: 10px;
+            }
+
+        }
+        .Bank2{
+            flex: 6;
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            text-align: center;
+
+            li{
+                list-style: none;
+                margin: 5px;
+            }
+         
+            .font{
+                font-size: 20px;
+                font-weight: 900;
+                margin: 10px;
+            }
+        }
+
+        
+    }
+
+  }
+}
