@@ -28,7 +28,7 @@ const Reset = () => {
   };
 
   function handleSignup() {
-    navigate('/SignUp');
+    navigate('/user');
   }
 
   return (
