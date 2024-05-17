@@ -11,6 +11,7 @@ export default function Auth() {
       return;
     }
   };
+  
   const containerClass =
     "container " + (type === "signUp" ? "right-panel-active" : "");
   return (
