@@ -23,6 +23,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import store from './store/store'
 import { Provider } from "react-redux";
+import PrivateRoutes from "./PrivateRoutes/PrivateRoutes";
 function App() {
   const { darkMode } = useContext(DarkModeContext);
 
@@ -31,9 +32,9 @@ function App() {
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
+        <Route exact element={<PrivateRoutes />}>
           <Route path="/">
             <Route index element={<Home />} />
-            <Route path="login" element={<Login />} />
             <Route path="users">
               <Route index element={<List />} />
               <Route path="new" element={<New inputs={userInputs} title="Add New User" />} />
@@ -83,9 +84,11 @@ function App() {
           <Route path="fund" element={<Fund />} /> 
           <Route path="profile" element={<Profile  inputs={userInputs} title="Add New User" />}/>
           <Route path="api" element={<Api />} /> 
-           <Route path="login" element={<Login />} /> 
+     
+           </Route>
+ 
           <Route path='/user' element={<Authmain/>} />
-            <Route path='/reset' element={<Reset/>} /> 
+          <Route path='/reset' element={<Reset/>} /> 
         </Routes>
       </BrowserRouter>
     </div>

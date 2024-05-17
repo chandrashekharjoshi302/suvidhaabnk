@@ -38,7 +38,7 @@ export const login = (credentials) => async (dispatch) => {
   console.log(credentials)
   try {
     dispatch(loginRequest());
-    const response = await fetch('https://fakestoreapi.com/auth/login', {
+    const response = await fetch('http://reportapi.suvidhaabnk.com:8080/api/v1/basic/loginUser', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -9,7 +9,7 @@ import {login} from '../../store/reducers/loginSlice'
 
 function SignInForm() {
 
-  const [username, setUserNumber] = useState('');
+  const [mobile, setUserNumber] = useState('');
   const [password, setPassword] = useState('');
 
   const formRef = useRef(null);
@@ -25,7 +25,7 @@ function SignInForm() {
         parsleyInstance.validate();
         if (parsleyInstance.isValid()) {
 
-     dispatch(login({ username, password }));
+     dispatch(login({ mobile, password }));
     if (!error) {
   
       navigate('/');
@@ -64,8 +64,8 @@ function SignInForm() {
         <input
           type="number"
           placeholder="Number"
-          name="number"
-          value={username}
+          name="mobile"
+          value={mobile}
           onChange={(e) => setUserNumber(e.target.value)}
           required
           data-parsley-trigger="change"
