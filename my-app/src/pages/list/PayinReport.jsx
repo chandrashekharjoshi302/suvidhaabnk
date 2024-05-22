@@ -1,7 +1,7 @@
 import "./list.scss"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
-import PayoutReportDatatable from "../../components/datatable/PayoutReportDatatable"
+import PayinReportDatatable from "../../components/datatable/PayinReportDatatable"
 
 const List = () => {
   return (
@@ -9,7 +9,7 @@ const List = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
-        <PayoutReportDatatable/>
+        <PayinReportDatatable/>
       </div>
     </div>
   )

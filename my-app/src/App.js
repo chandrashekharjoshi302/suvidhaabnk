@@ -55,7 +55,7 @@ function App() {
               <Route path="new" element={<New inputs={userInputs} title="Add New User" />} />
               <Route path=":userId" element={<Single />} />
             </Route>
-            <Route path="Payinreport">
+            <Route path="payinreport">
               <Route index element={<PayinReport />} />
               <Route path="new" element={<New inputs={userInputs} title="Add New User" />} />
               <Route path=":userId" element={<Single />} />

@@ -35,13 +35,13 @@ const Sidebar = () => {
           </li>
           </Link>
           <p className="title">Report</p>
-          <Link to="/bulkpayout" style={{ textDecoration: "none" }}>
+          <Link to="/payoutreport" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
               <span>Payout Report</span>
             </li>
           </Link>
-          <Link to="/payoutreport" style={{ textDecoration: "none" }}>
+          <Link to="/payinreport" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
               <span>Payin Report</span>
